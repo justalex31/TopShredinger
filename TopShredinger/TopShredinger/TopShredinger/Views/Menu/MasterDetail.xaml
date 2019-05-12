@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:detailviews="clr-namespace:TopShredinger.Views.DetailViews;assembly=TopShredinger"
+             xmlns:Local="clr-namespace:TopShredinger.Views.Menu"
+             x:Class="TopShredinger.Views.Menu.MasterDetail">
+
+    <MasterDetailPage.Master>
+        <Local:MasterPage x:Name="masterpage"/>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <detailviews:InfoScreen1 />
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+    
+</MasterDetailPage>
